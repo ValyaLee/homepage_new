@@ -9,4 +9,9 @@ body {
  width: 1440px;
  height: 900px;
  background-color: #241D23;
+ color: aqua;
+}
+
+h1 {
+  background-color: bisque;
 }
