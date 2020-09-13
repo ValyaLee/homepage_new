@@ -1,0 +1,12 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+ position: relative;
+ width: 1440px;
+ height: 900px;
+ background-color: #241D23;
+}
