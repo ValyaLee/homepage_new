@@ -3,7 +3,14 @@
 *:before {
   box-sizing: border-box;
 }
-
+@font-face {
+  font-family: 'Telegraf';
+  src: url("fonts/Telegraf-Regular.woff2") format("woff2"),
+      url("fonts/Telegraf-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
  position: relative;
  width: 1440px;
@@ -25,9 +32,9 @@ hr {
  border: 1px solid #FF774F;
  transform: rotate(90deg);
  position: absolute;
- width: 1440px;
+ width: 1600px;
  height: 0px;
- left: -680px;
+ left: -760px;
  top: 0px;
  margin: 0px;
 }
