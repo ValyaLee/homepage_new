@@ -1,6 +1,6 @@
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   box-sizing: border-box;
 }
 @font-face {
@@ -15,7 +15,17 @@ body {
  position: relative;
  background-color: #241D23;
 }
-
+a,
+a:visited {
+  color: inherit;
+}
+a {
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+  color: #C15A3C;
+}
 .parent {
   display: grid;
   grid-template-columns: 1fr repeat(2, 12fr) 1fr;
@@ -28,7 +38,7 @@ body {
   height: 55px;
   border-right: 1px solid #C15A3C;
 }
-.div2 { grid-area: 1 / 2 / 2 / 4;
+.name { grid-area: 1 / 2 / 2 / 4;
 }
 .div3 { grid-area: 1 / 4 / 2 / 5;
   border-left: 1px solid #C15A3C;
@@ -37,48 +47,48 @@ body {
   border-top: 1px solid #C15A3C;
   border-right: 1px solid #C15A3C;
 }
-.div5 { grid-area: 2 / 2 / 3 / 3;
+.pr { grid-area: 2 / 2 / 3 / 3;
   border-top: 1px solid #C15A3C;
   display: flex;
 }
-.div6 { grid-area: 2 / 3 / 3 / 4;
+.sl { grid-area: 2 / 3 / 3 / 4;
   border-top: 1px solid #C15A3C;
   border-left: 1px solid #C15A3C;
   display: flex;
 }
-.div7 { grid-area: 2 / 4 / 3 / 5;
+.bio { grid-area: 2 / 4 / 3 / 5;
   border-top: 1px solid #C15A3C;
   border-left: 1px solid #C15A3C;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 .div8 { grid-area: 3 / 1 / 4 / 2;
   border-top: 1px solid #C15A3C;
   border-right: 1px solid #C15A3C;
 }
-.div9 { grid-area: 3 / 2 / 4 / 3;
+.portraits { grid-area: 3 / 2 / 4 / 3;
   border-top: 1px solid #C15A3C;
   display: flex;
 }
-.div10 { grid-area: 3 / 3 / 4 / 4;
+.compaign { grid-area: 3 / 3 / 4 / 4;
   border-left: 1px solid #C15A3C;
   border-top: 1px solid #C15A3C;
   display: flex;
 }
-.div11 { grid-area: 3 / 4 / 4 / 5;
+.pub { grid-area: 3 / 4 / 4 / 5;
   border-top: 1px solid #C15A3C;
   border-left: 1px solid #C15A3C;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .div12 { grid-area: 4 / 1 / 5 / 2;
   border-top: 1px solid #C15A3C;
   border-right: 1px solid #C15A3C;}
 .div13 { grid-area: 4 / 2 / 5 / 3;
   border-top: 1px solid #C15A3C; }
-.div14 { grid-area: 4 / 3 / 5 / 4;
+.cont { grid-area: 4 / 3 / 5 / 4;
   border-left: 1px solid #C15A3C;
   border-top: 1px solid #C15A3C;
   display: flex;
@@ -99,7 +109,7 @@ body {
   top: 70%;
   left: 10px;
 }
-.div5 p, .div6 p, .div9 p, .div10 p  {
+.pr p, .sl p, .portraits p, .compaign p  {
   font-family: Telegraf;
   font-size: 18px;
   color: #C15A3C;
@@ -107,15 +117,15 @@ body {
   margin: 150px auto 0;
 }
 
-.div7 p , .div11 p {
+.bio p , .pub p {
   font-family: Telegraf;
   font-size: 18px;
   color: #C15A3C;
   position: relative;
-  margin: absolute 0;
+  margin: 0;
   writing-mode: vertical-rl;
 }
-.div14 p {
+.cont p {
   font-family: Telegraf;
   font-size: 18px;
   color: #C15A3C;
