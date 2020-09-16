@@ -39,10 +39,10 @@ h1 {
     grid-template-rows: 1fr repeat(2, 6fr) 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    height: 100vh;
 }
 
 .div1 { grid-area: 1 / 1 / 2 / 2;
-    height: 55px;
     border-right: 1px solid #C15A3C;
 }
 .div2 { grid-area: 1 / 2 / 2 / 4; 
