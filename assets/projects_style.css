@@ -23,16 +23,7 @@ a:visited {
 a {
   text-decoration: none;
 }
-h1 {
-    font-family: Telegraf;
-    font-size: 18px;
-    color: #C15A3C;
-    padding: 10px;
-    margin: 0;
-    position: sticky;
-    top: 70%;
-    left: 10px;
-}
+
 .parent {
     display: grid;
     grid-template-columns: 1fr repeat(2, 12fr) 1fr;
@@ -46,7 +37,19 @@ h1 {
     border-right: 1px solid #C15A3C;
 }
 .div2 { grid-area: 1 / 2 / 2 / 4; 
+    display: flex;
 }
+.div2 p {
+    font-family: Telegraf;
+    font-size: 18px;
+    color: #C15A3C;
+    padding: 10px;
+    padding-top: 30px;
+    height: 30px;
+    width: 120px;
+    margin: 0;
+  }
+  
 .div3 { grid-area: 1 / 4 / 2 / 5; 
     border-left: 1px solid #C15A3C;
 }
