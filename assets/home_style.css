@@ -57,7 +57,7 @@ a:hover{
   background-size: cover;
   background-position: center;
   color: #C15A3C;
-  transition: background-image 1s ease, color 1s ease;
+  transition: background-image 0.5 ease, color 0.5 ease;
 }
 .pr:hover {
   background-image: url(images/image_1.png);
@@ -76,7 +76,7 @@ a:hover{
   background-size: cover;
   background-position: center;
   color: #C15A3C;
-  transition: background-image 1s ease, color 1s ease;
+  transition: background-image 0.5 ease, color 0.5 ease;
 }
 .sl:hover {
   background-image: url(images/image_2.png);
@@ -104,7 +104,7 @@ a:hover{
   background-size: cover;
   background-position: center;
   color: #C15A3C;
-  transition: background-image 1s ease, color 1s ease;
+  transition: background-image 0.5 ease, color 0.5 ease;
 }
 
 .portraits:hover {
@@ -124,7 +124,7 @@ a:hover{
   background-size: cover;
   background-position: center;
   color: #C15A3C;
-  transition: background-image 1s ease, color 1s ease;
+  transition: background-image 0.5 ease, color 0.5 ease;
 }
 .campaign:hover {
   background-image: url(images/image_4.png);
