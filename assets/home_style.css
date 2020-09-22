@@ -51,11 +51,40 @@ a:hover{
 .pr { grid-area: 2 / 2 / 3 / 3;
   border-top: 1px solid #C15A3C;
   display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/bg_color1.png);
+  background-size: cover;
+  background-position: center;
+  color: #C15A3C;
+  transition: background-image 1s ease, color 1s ease;
 }
+.pr:hover {
+  background-image: url(images/image_1.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  color:#7ee74e;
+}
+
 .sl { grid-area: 2 / 3 / 3 / 4;
   border-top: 1px solid #C15A3C;
   border-left: 1px solid #C15A3C;
   display: flex;
+  background-image: url(images/bg_color1.png);
+  background-size: cover;
+  background-position: center;
+  color: #C15A3C;
+  transition: background-image 1s ease, color 1s ease;
+}
+.sl:hover {
+  background-image: url(images/image_2.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  color:#7ee74e;
 }
 .bio { grid-area: 2 / 4 / 3 / 5;
   border-top: 1px solid #C15A3C;
@@ -71,11 +100,40 @@ a:hover{
 .portraits { grid-area: 3 / 2 / 4 / 3;
   border-top: 1px solid #C15A3C;
   display: flex;
+  background-image: url(images/bg_color1.png);
+  background-size: cover;
+  background-position: center;
+  color: #C15A3C;
+  transition: background-image 1s ease, color 1s ease;
 }
-.compaign { grid-area: 3 / 3 / 4 / 4;
+
+.portraits:hover {
+  background-image: url(images/image_3.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  color:#7ee74e;
+}
+
+.campaign { grid-area: 3 / 3 / 4 / 4;
   border-left: 1px solid #C15A3C;
   border-top: 1px solid #C15A3C;
   display: flex;
+  background-image: url(images/bg_color1.png);
+  background-size: cover;
+  background-position: center;
+  color: #C15A3C;
+  transition: background-image 1s ease, color 1s ease;
+}
+.campaign:hover {
+  background-image: url(images/image_4.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  color:#7ee74e;
+
 }
 .pub { grid-area: 3 / 4 / 4 / 5;
   border-top: 1px solid #C15A3C;
@@ -100,7 +158,7 @@ a:hover{
   border-left: 1px solid #C15A3C;
   border-top: 1px solid #C15A3C;}
 
- .name p {
+.name p {
   font-family: Telegraf;
   font-size: 18px;
   color: #C15A3C;
@@ -110,10 +168,9 @@ a:hover{
   width: 120px;
   margin: 0;
 }
-.pr p, .sl p, .portraits p, .compaign p  {
+.pr p, .sl p, .portraits p, .campaign p  {
   font-family: Telegraf;
   font-size: 18px;
-  color: #C15A3C;
   margin: 150px auto 0;
 }
 
@@ -131,3 +188,5 @@ a:hover{
   margin: 10px auto 0;
 
 }
+
+

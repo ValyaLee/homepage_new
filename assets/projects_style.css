@@ -49,7 +49,7 @@ a {
     width: 120px;
     margin: 0;
   }
-  
+
 .div3 { grid-area: 1 / 4 / 2 / 5; 
     border-left: 1px solid #C15A3C;
 }
@@ -70,16 +70,30 @@ a {
     writing-mode: vertical-rl;
     transform: scale(-1, -1) ;
 }
-.div5 { grid-area: 2 / 2 / 4 / 3; 
+.big_little { grid-area: 2 / 2 / 4 / 3; 
     border-top: 1px solid #C15A3C;
     display: flex;
     justify-content: center;
+    background-image: url(images/project_bg.png);
+    background-size: cover;
+    background-position: center;
+    color: #C15A3C;
+    transition: background-image 1s ease, color 1s ease;
+}
+.big_little:hover {
+    background-image: url(images/image_big.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    color:#7ee74e;
 }
 .div6 { grid-area: 2 / 3 / 4 / 4; 
     border-top: 1px solid #C15A3C;
     border-left: 1px solid #C15A3C;
     display: flex;
     justify-content: center;
+    color: #C15A3C;
 }
 .div7 { grid-area: 2 / 4 / 3 / 5; 
     border-top: 1px solid #C15A3C;
@@ -117,10 +131,9 @@ a {
     border-left: 1px solid #C15A3C;
     border-top: 1px solid #C15A3C;
 }
-.div5 p, .div6 p  {
+.big_little p, .div6 p  {
     font-family: Telegraf;
     font-size: 18px;
-    color: #C15A3C;
     position: relative;
     margin: auto 0;
 }
