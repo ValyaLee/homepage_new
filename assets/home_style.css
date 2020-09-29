@@ -11,6 +11,19 @@
   font-style: normal;
   font-display: swap;
 }
+@media (max-width: 600px){
+  html {
+    font-size: calc(10/1440*600px);
+  }
+}
+@media (min-width: 1600px){
+  html {
+    font-size: calc(10/1440*1600px)
+  }
+}
+html {
+ font-size: calc(10/1440*100vw);
+}
 body {
  background-color: #241D23;
  height: 100vh;
@@ -41,6 +54,18 @@ a:hover{
 .name { grid-area: 1 / 2 / 2 / 4;
   display: flex;
 }
+.name p {
+  font-family: Telegraf;
+  font-size: 1.8rem;
+  color: #C15A3C;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
 .div3 { grid-area: 1 / 4 / 2 / 5;
   border-left: 1px solid #C15A3C;
 }
@@ -48,42 +73,18 @@ a:hover{
   border-top: 1px solid #C15A3C;
   border-right: 1px solid #C15A3C;
 }
-/* .pr { grid-area: 2 / 2 / 3 / 3;
-  border-top: 1px solid #C15A3C;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background-image: url(images/bg_color1.png);
-  background-size: cover;
-  background-position: center;
-  color: #C15A3C;
-  transition: background-image 0.5 ease, color 0.5 ease;
-}
-.pr:hover {
-  background-image: url(images/image_1.png);
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  color:#7ee74e;
-} */
-
 .pr { grid-area: 2 / 2 / 3 / 3;
   border-top: 1px solid #C15A3C;
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: #241D23;
-  background-size: cover;
-  background-position: center;
   color: #C15A3C;
   position:relative;
   align-items: center;
   justify-content: center;
   font-family: Telegraf;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
-
 .pr_overlay {
   width: 100%;
   height: 100%;
@@ -103,126 +104,142 @@ a:hover{
   transition-timing-function: ease-out;
 }
 
-
 .sl { grid-area: 2 / 3 / 3 / 4;
-  border-top: 1px solid #C15A3C;
-  border-left: 1px solid #C15A3C;
+  border-top: 1px  solid #C15A3C;
+  border-left: 1px  solid #C15A3C;
   display: flex;
-  background-image: url(images/bg_color1.png);
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  height: 100%;
   color: #C15A3C;
-  transition: background-image 0.5 ease, color 0.5 ease;
+  position:relative;
+  align-items: center;
+  justify-content: center;
+  font-family: Telegraf;
+  font-size: 1.8rem;
 }
-.sl:hover {
+.sl_overlay {
+  height: 100%;
+  width: 100%;
   background-image: url(images/image_2.png);
   background-size: cover;
   background-position: center;
-  height: 100%;
-  width: 100%;
-  color:#7ee74e;
-}
-.bio { grid-area: 2 / 4 / 3 / 5;
-  border-top: 1px solid #C15A3C;
-  border-left: 1px solid #C15A3C;
+  position: absolute;
+  margin: 0 auto;
+  opacity:0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.div8 { grid-area: 3 / 1 / 4 / 2;
+.sl_overlay:hover {
+  opacity: 0.3;
+  transition: 500ms;
+  transition-timing-function: ease-out;
+}
+.div7 { grid-area: 2 / 4 / 3 / 5;
   border-top: 1px solid #C15A3C;
-  border-right: 1px solid #C15A3C;
+  border-left: 1px  solid #C15A3C;
+}
+.div8 { grid-area: 3 / 1 / 4 / 2;
+  border-top: 1px  solid #C15A3C;
+  border-right: 1px  solid #C15A3C;
 }
 .portraits { grid-area: 3 / 2 / 4 / 3;
   border-top: 1px solid #C15A3C;
   display: flex;
-  background-image: url(images/bg_color1.png);
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  height: 100%;
   color: #C15A3C;
-  transition: background-image 0.5 ease, color 0.5 ease;
+  position:relative;
+  align-items: center;
+  justify-content: center;
+  font-family: Telegraf;
+  font-size: 1.8rem;
 }
 
-.portraits:hover {
+.portraits_overlay {
+  height: 100%;
+  width: 100%;
   background-image: url(images/image_3.png);
   background-size: cover;
   background-position: center;
-  height: 100%;
-  width: 100%;
-  color:#7ee74e;
+  position: absolute;
+  margin: 0 auto;
+  opacity:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portraits_overlay:hover {
+  opacity: 0.3;
+  transition: 500ms;
+  transition-timing-function: ease-out;
 }
 
-.campaign { grid-area: 3 / 3 / 4 / 4;
+.bio { grid-area: 3 / 3 / 4 / 4;
   border-left: 1px solid #C15A3C;
-  border-top: 1px solid #C15A3C;
+  border-top: 1px  solid #C15A3C;
   display: flex;
-  background-image: url(images/bg_color1.png);
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  height: 100%;
   color: #C15A3C;
-  transition: background-image 0.5 ease, color 0.5 ease;
+  position:relative;
+  align-items: center;
+  justify-content: center;
+  font-family: Telegraf;
+  font-size: 1.8rem;
 }
-.campaign:hover {
+.bio_overlay { 
+  height: 100%;
+  width: 100%;
   background-image: url(images/image_4.png);
   background-size: cover;
   background-position: center;
-  height: 100%;
-  width: 100%;
-  color:#7ee74e;
-
-}
-.pub { grid-area: 3 / 4 / 4 / 5;
-  border-top: 1px solid #C15A3C;
-  border-left: 1px solid #C15A3C;
+  position: absolute;
+  margin: 0 auto;
+  opacity:0;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-.div12 { grid-area: 4 / 1 / 5 / 2;
-  border-top: 1px solid #C15A3C;
-  border-right: 1px solid #C15A3C;}
-.div13 { grid-area: 4 / 2 / 5 / 3;
-  border-top: 1px solid #C15A3C; }
-.cont { grid-area: 4 / 3 / 5 / 4;
-  border-left: 1px solid #C15A3C;
-  border-top: 1px solid #C15A3C;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
-.div15 { grid-area: 4 / 4 / 5 / 5;
-  border-left: 1px solid #C15A3C;
-  border-top: 1px solid #C15A3C;}
-
-.name p {
-  font-family: Telegraf;
-  font-size: 18px;
-  color: #C15A3C;
-  padding: 10px;
-  padding-top: 30px;
-  height: 30px;
-  width: 120px;
-  margin: 0;
-}
-.pr p, .sl p, .portraits p, .campaign p  {
-  font-family: Telegraf;
-  font-size: 18px;
-  /* margin: 150px auto 0; */
+.bio_overlay:hover {
+  opacity: 0.3;
+  transition: 500ms;
+  transition-timing-function: ease-out;
 }
 
-.bio p , .pub p {
-  font-family: Telegraf;
-  font-size: 18px;
-  color: #C15A3C;
-  margin: 0;
-  writing-mode: vertical-rl;
+.cont { grid-area: 4 / 3 / 5 / 4;
+  border-left: 1px  solid #C15A3C;
+  border-top: 1px solid #C15A3C;
+  display: flex;
+  position: relative;
 }
 .cont p {
   font-family: Telegraf;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #C15A3C;
-  margin: 10px auto 0;
-
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center; 
+  width: 100%;
+  height: 100%;
 }
+
+.div11 { grid-area: 3 / 4 / 4 / 5;
+  border-top: 1px  solid #C15A3C;
+  border-left: 1px solid #C15A3C;
+}
+.div15 { grid-area: 4 / 4 / 5 / 5;
+  border-left: 1px  solid #C15A3C;
+  border-top: 1px  solid #C15A3C;}
+
+.div12 { grid-area: 4 / 1 / 5 / 2;
+  border-top: 1px  solid #C15A3C;
+  border-right: 1px  solid #C15A3C;
+}
+.div13 { grid-area: 4 / 2 / 5 / 3;
+  border-top: 1px  solid #C15A3C; 
+}
+
 
 

@@ -11,6 +11,20 @@
   font-style: normal;
   font-display: swap;
 }
+/* @media (max-width: 600px){
+    html {
+      font-size: calc(10/1440*600px);
+    }
+}
+@media (min-width: 1600px){
+    html {
+      font-size: calc(10/1440*1600px)
+    }
+} */
+
+html {
+    font-size: calc(10/1440*100vw);
+}
 body {
     position: relative;
     background-color: #241D23;
@@ -36,57 +50,100 @@ a {
 .div1 { grid-area: 1 / 1 / 2 / 2;
     border-right: 1px solid #C15A3C;
 }
-.div2 { grid-area: 1 / 2 / 2 / 4; 
+@media (max-width: 768px){
+    .div1  {
+        width:60px;
+    }
+}
+
+.name { grid-area: 1 / 2 / 2 / 4;
     display: flex;
 }
-.div2 p {
+.name a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.name p {
     font-family: Telegraf;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #C15A3C;
-    padding: 10px;
-    padding-top: 30px;
-    height: 30px;
-    width: 120px;
-    margin: 0;
-  }
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
 .div3 { grid-area: 1 / 4 / 2 / 5; 
     border-left: 1px solid #C15A3C;
 }
-.div4 { grid-area: 2 / 1 / 3 / 2;
+@media (max-width: 768px){
+    .div3 {
+        width:60px;
+    }
+}
+.pr { grid-area: 2 / 1 / 3 / 2;
     border-top: 1px solid #C15A3C;
     border-right: 1px solid #C15A3C;
     display: flex;
+    position: relative;
+}
+.pr p {
+    font-family: Telegraf;
+    font-size: 1.8rem;
+    color: #C15A3C;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
-}
-.div4 p {
-    font-family: Telegraf;
-    font-size: 18px;
-    color: #C15A3C;
-    position: relative;
-    margin: 0;
-    width: 20px;
     writing-mode: vertical-rl;
     transform: scale(-1, -1) ;
 }
 .big_little { grid-area: 2 / 2 / 4 / 3; 
     border-top: 1px solid #C15A3C;
     display: flex;
-    justify-content: center;
-    background-image: url(images/project_bg.png);
-    background-size: cover;
-    background-position: center;
+    width: 100%;
+    height: 100%;
     color: #C15A3C;
-    transition: background-image 0.5 ease, color 0.5 ease;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    font-family: Telegraf;
+    font-size: 1.8rem;
+    
 }
-.big_little:hover {
+@media (max-width: 768px){
+    .big_little { 
+    width: 100%;
+    height: 50%;
+    }
+}
+.big_little_overlay {
     background-image: url(images/image_big.png);
-    background-size: cover;
-    background-position: center;
     height: 100%;
     width: 100%;
-    color:#7ee74e;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    margin: 0 auto;
+    opacity:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.big_little_overlay:hover {
+    opacity: 0.3;
+    transition: 500ms;
+    transition-timing-function: ease-out;
 }
 .div6 { grid-area: 2 / 3 / 4 / 4; 
     border-top: 1px solid #C15A3C;
@@ -94,6 +151,10 @@ a {
     display: flex;
     justify-content: center;
     color: #C15A3C;
+}
+@media (max-width: 768px){
+    .div6 {display: none;
+    }
 }
 .div7 { grid-area: 2 / 4 / 3 / 5; 
     border-top: 1px solid #C15A3C;
@@ -133,14 +194,24 @@ a {
 }
 .big_little p, .div6 p  {
     font-family: Telegraf;
-    font-size: 18px;
+    font-size: 1.8rem;
     position: relative;
     margin: auto 0;
 }
-.div12 p {
-    font-family: Telegraf;
-    font-size: 18px;
-    color: #C15A3C;
+.cont { grid-area: 4 / 3 / 5 / 4;
+    border-left: 1px  solid #C15A3C;
+    border-top: 1px solid #C15A3C;
+    display: flex;
     position: relative;
-    margin: 10px auto 0;  
-}
+  }
+  .cont p {
+    font-family: Telegraf;
+    font-size: 1.8rem;
+    color: #C15A3C;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    height: 100%;
+  }
