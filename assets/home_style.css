@@ -241,5 +241,8 @@ a:hover{
   border-top: 1px  solid #C15A3C; 
 }
 
-
+@media (max-width: 1024px){
+  .div4 {width: 14rem;}
+  .div7 {width: 14rem;}
+}
 
