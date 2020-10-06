@@ -229,7 +229,7 @@ a {
 }
 
 @media (max-width: 600px){
-    .parent-600 {
+    .parent {
         display: grid;
         grid-template-columns: 1fr 6fr 1fr;
         grid-template-rows: 3fr repeat(4, 6fr) 3fr;

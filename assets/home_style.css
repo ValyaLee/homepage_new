@@ -54,7 +54,7 @@ a:hover{
 .name { grid-area: 1 / 2 / 2 / 4;
   display: flex;
 }
-.name p {
+.name p, .div2-600 p {
   font-family: Telegraf;
   font-size: 1.8rem;
   color: #C15A3C;
@@ -241,26 +241,32 @@ a:hover{
   border-top: 1px  solid #C15A3C; 
 }
 
-@media (max-width: 1024px){
-  .div4 {width: 14rem;}
-  .div7 {width: 14rem;}
-}
-
 @media (max-width: 600px){
+  .parent { visibility: hidden;
+    width: 0;
+    height: 0;
+}
   .parent-600 {
       display: grid;
       grid-template-columns: 1fr 6fr 1fr;
       grid-template-rows: 3fr repeat(4, 6fr) 3fr;
       grid-column-gap: 0px;
       grid-row-gap: 0px;
+      height: 100vh;
       }
       
-      .div1-600 { grid-area: 1 / 1 / 2 / 2; }
-      .div2-600 { grid-area: 1 / 2 / 2 / 3; }
-      .div3-600 { grid-area: 1 / 3 / 2 / 4; }
-      .div4-600 { grid-area: 2 / 1 / 3 / 4; }
-      .div5-600 { grid-area: 3 / 1 / 4 / 4; }
-      .div6-600 { grid-area: 4 / 1 / 5 / 4; }
-      .div7-600 { grid-area: 5 / 1 / 6 / 4; }
-      .div8-600 { grid-area: 6 / 1 / 7 / 4; }
+      .div1-600 { grid-area: 1 / 1 / 2 / 2;}
+      .div2-600 { grid-area: 1 / 2 / 2 / 3;}
+      .div3-600 { grid-area: 1 / 3 / 2 / 4;}
+      .div4-600 { grid-area: 2 / 1 / 3 / 4;
+        border-top: 1px  solid #C15A3C;}
+      .div5-600 { grid-area: 3 / 1 / 4 / 4; 
+        border-top: 1px  solid #C15A3C;}
+      .div6-600 { grid-area: 4 / 1 / 5 / 4;
+        border-top: 1px  solid #C15A3C; }
+      .div7-600 { grid-area: 5 / 1 / 6 / 4; 
+        border-top: 1px  solid #C15A3C;}
+      .div8-600 { grid-area: 6 / 1 / 7 / 4; 
+        border-top: 1px  solid #C15A3C;}
+
 }
