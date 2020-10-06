@@ -11,11 +11,7 @@
   font-style: normal;
   font-display: swap;
 }
-@media (max-width: 600px){
-  html {
-    font-size: calc(10/1440*600px);
-  }
-}
+
 @media (min-width: 1600px){
   html {
     font-size: calc(10/1440*1600px)
@@ -242,6 +238,9 @@ a:hover{
 }
 
 @media (max-width: 600px){
+  html {
+    font-size: calc(20/1440*600px)}
+
   .parent { visibility: hidden;
     width: 0;
     height: 0;
